@@ -1,4 +1,5 @@
-header { 
-    background-color: brown;
-    color: bisque;
+main {
+    min-height: 70vh;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
 }
