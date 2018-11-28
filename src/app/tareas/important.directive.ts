@@ -1,25 +1,19 @@
 import { Directive, ElementRef, Input, OnInit, HostListener } from '@angular/core';
-import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
-
-@Directive({
+ @Directive({
   selector: '[dvtImportant]'
 })
 export class ImportantDirective implements OnInit {
-
-  @Input() dvtImportant: string;
-
-  constructor(private eTarget: ElementRef) {}
-   
-  ngOnInit() {
+   @Input() dvtImportant: string;
+   constructor(private eTarget: ElementRef) {}
+   ngOnInit() {
     console.log('Aplicando directiva de prueba');
     console.log(this.eTarget);
-    const html = `¡${this.dvtImportant}!: ` + this.eTarget.nativeElement.innerHTML;
+    const html = `¡${this.dvtImportant}!: ` +  this.eTarget.nativeElement.innerHTML;
     this.eTarget.nativeElement.innerHTML = html;
+    console.log(this.dvtImportant);
   }
-
-  @HostListener('click')
+   @HostListener ('click')
   cambiarColor() {
-    this.eTarget.nativeElement.style = 'background-color: yellow'
+    this.eTarget.nativeElement.style = 'background-color : yellow';
   }
-
-}
+ }
