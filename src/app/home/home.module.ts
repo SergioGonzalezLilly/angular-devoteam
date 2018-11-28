@@ -8,11 +8,15 @@ import { FormsModule } from '@angular/forms';
 import { SaludoLocalComponent } from './saludo-local/saludo-local.component';
 
 @NgModule({
-  declarations: [HomeComponent, SaludoComponent, SaludoLocalComponent],
+  declarations: [
+    HomeComponent,
+    SaludoComponent,
+    SaludoLocalComponent
+  ],
   imports: [
     CommonModule,
-    HomeRoutingModule,
-    FormsModule
+    FormsModule,
+    HomeRoutingModule
   ]
 })
 export class HomeModule { }

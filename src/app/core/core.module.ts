@@ -6,12 +6,16 @@ import { MenuComponent } from './menu/menu.component';
 import { RouterModule } from '@angular/router';
 
 @NgModule({
-  declarations: [HeaderComponent, FooterComponent, MenuComponent],
+  declarations: [
+    HeaderComponent,
+    FooterComponent,
+    MenuComponent
+  ],
   imports: [
     CommonModule,
     RouterModule
   ],
-  exports: [
+  exports : [
     HeaderComponent,
     FooterComponent
   ]

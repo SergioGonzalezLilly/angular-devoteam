@@ -1,22 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SaludoComponent } from './saludo.component';
-import { FormsModule } from '@angular/forms';
+import { ListaPlusComponent } from './lista-plus.component';
 
-describe('SaludoComponent', () => {
-  let component: SaludoComponent;
-  let fixture: ComponentFixture<SaludoComponent>;
+describe('ListaPlusComponent', () => {
+  let component: ListaPlusComponent;
+  let fixture: ComponentFixture<ListaPlusComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SaludoComponent ],
-      imports: [FormsModule]
+      declarations: [ ListaPlusComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SaludoComponent);
+    fixture = TestBed.createComponent(ListaPlusComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

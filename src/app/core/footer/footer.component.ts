@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-footer',
+  selector: 'dvt-footer',
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.css']
 })
@@ -14,9 +14,9 @@ export class FooterComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.autor = 'Sergio González';
-    this.empresa = 'Devoteam Drago';
-    this.lugar = 'Madrid' ;
+    this.autor = 'Alejandro Cerezo';
+    this.empresa = 'Formadores IT';
+    this.lugar = 'Madrid';
     this.fecha = new Date();
   }
 
