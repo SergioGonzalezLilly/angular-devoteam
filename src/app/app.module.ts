@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
@@ -11,17 +11,24 @@ import { AboutModule } from './about/about.module';
 import { registerLocaleData } from '@angular/common';
 import localeES from '@angular/common/locales/es';
 import { BlogModule } from './blog/blog.module';
+import { CursosComponent } from './cursos/cursos.component';
+import { FormTdComponent } from './cursos/form-td/form-td.component';
+import { FormMdComponent } from './cursos/form-md/form-md.component';
 
-// the second parameter 'fr' is optional
+// the second parameter 'es' is optional
 registerLocaleData(localeES, 'es');
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CursosComponent,
+    FormTdComponent,
+    FormMdComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    ReactiveFormsModule,
     AppRoutingModule,
     CoreModule,
     HomeModule,
