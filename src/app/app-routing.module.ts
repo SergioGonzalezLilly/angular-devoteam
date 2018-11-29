@@ -5,6 +5,7 @@ import { TareasComponent } from './tareas/tareas.component';
 import { AboutComponent } from './about/about.component';
 import { BlogComponent } from './blog/blog.component';
 import { CursosComponent } from './cursos/cursos.component';
+import { LibrosComponent } from './libros/libros.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'blog', component: BlogComponent },
   { path: 'cursos', component: CursosComponent },
   { path: 'about', component: AboutComponent },
+  { path: 'libros', component: LibrosComponent },
   { path: '', pathMatch: 'full', redirectTo: 'home' },
   { path: '**', redirectTo: 'home' }
 ];
