@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Turno, Curso } from 'src/app/models/alumno.model';
+import { Turno, Curso, Alumno } from 'src/app/models/alumno.model';
 import { CURSOS, TURNOS } from 'src/app/models/cursos.data';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
@@ -14,9 +14,7 @@ export class FormMdComponent implements OnInit {
   form: FormGroup;
   oAlumno: Alumno;
 
- constructor(public formBuilder: FormBuilder) {
-
- }
+ constructor(public formBuilder: FormBuilder) {}
 
   ngOnInit() {
     this.aTurnos = TURNOS;
