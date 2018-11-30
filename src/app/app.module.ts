@@ -7,7 +7,7 @@ import { CoreModule } from './core/core.module';
 import { HomeModule } from './home/home.module';
 import { TareasModule } from './tareas/tareas.module';
 import { AboutModule } from './about/about.module';
-
+import { HttpClientModule } from '@angular/common/http';
 import { registerLocaleData } from '@angular/common';
 import localeES from '@angular/common/locales/es';
 import { BlogModule } from './blog/blog.module';
@@ -38,7 +38,8 @@ registerLocaleData(localeES, 'es');
     AboutModule,
     BlogModule,
     FontAwesomeModule,
-    LibrosModule
+    LibrosModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
