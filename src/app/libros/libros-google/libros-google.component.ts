@@ -34,8 +34,7 @@ export class LibrosGoogleComponent implements OnInit {
               libro.autor = item.volumeInfo.authors.join(' | ');
             }
             return libro;
-          }
-        );
+        });
         console.log(this.aLibros);
       },
       (error) => { console.log(error); }
