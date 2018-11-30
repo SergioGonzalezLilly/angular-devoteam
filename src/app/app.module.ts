@@ -16,6 +16,7 @@ import { FormTdComponent } from './cursos/form-td/form-td.component';
 import { FormMdComponent } from './cursos/form-md/form-md.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { LibrosModule } from './libros/libros.module';
+import { UsersModule } from './users/users.module';
 
 // the second parameter 'es' is optional
 registerLocaleData(localeES, 'es');
@@ -39,7 +40,8 @@ registerLocaleData(localeES, 'es');
     BlogModule,
     FontAwesomeModule,
     LibrosModule,
-    HttpClientModule
+    HttpClientModule,
+    UsersModule
   ],
   providers: [],
   bootstrap: [AppComponent]
